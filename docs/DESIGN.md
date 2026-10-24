@@ -69,7 +69,7 @@ No pure `#000` or `#fff` anywhere. One accent, used only on actions, marks, and 
 
 ## Components
 
-**Buttons.** One shape: marigold pill, ink label, 1 px deep-marigold rim, soft amber shadow. Hover lifts 2 px and brightens. One primary per section, never two in a row. Mobile hero button goes full-width; a sticky bottom bar repeats the action after the first screen. The seat button breathes a slow marigold halo (3.2 s) on the hero, the final CTA and the sticky bar; the animation is replaced by a static glow under `prefers-reduced-motion`, so it never strobes for anyone who asked the system not to animate.
+**Buttons.** One shape: marigold pill, ink label, 1 px deep-marigold rim, soft amber shadow. Hover lifts 2 px and brightens. One primary per section, never two in a row. The hero CTA carries the free-3-days offer as a deep-marigold ticket tag inside the pill, after the arrow; the tag is decorative (`aria-hidden`) so the accessible name remains “Reserve my free seat.” Mobile hero button goes full-width; a sticky bottom bar repeats the action after the first screen. The seat button breathes a slow marigold halo (3.2 s) on the hero, the final CTA and the sticky bar; the animation is replaced by a static glow under `prefers-reduced-motion`, so it never strobes for anyone who asked the system not to animate.
 
 **Cards.** Only two exist: the demo card (rotated −1.4°, two-layer shadow, notebook feel) and the turn block (flat paper, marigold rule). Everything else is hairlines and type — no box soup.
 
@@ -79,7 +79,7 @@ No pure `#000` or `#fff` anywhere. One accent, used only on actions, marks, and 
 
 **Focus and hit areas.** Every interactive control takes a 2 px ring, recoloured by surface: marigold-deep on ivory, linen, sage and blush; ink on the pale marigold band. Logo, header nav and the rating-band link keep their visual size but extend to a 44 px hit area with a transparent pseudo-element; footer links and small buttons use real 44 px rows.
 
-**Portrait.** Arch frame (a doorway, not a circle), 1 px marigold outline offset behind, photo on a warm-white mat with a thin ink hairline. No blend mode: it reads as a photographic print laid on the page. Caption in two weights. Rotated marigold stamp badge.
+**Portrait.** Arch frame (a doorway, not a circle), 1 px marigold outline offset behind, photo on a warm-white mat with a thin ink hairline. No blend mode: it reads as a photographic print laid on the page. Caption in two weights. The former rotated stamp badge was removed; the offer now sits on the primary CTA instead.
 
 **Rating band.** A full-width pale marigold band between the hero and the first argument: Fraunces `5.0`, five solid stars, and one sentence — "13 of 13 students rated the training five stars." The stars are a single inline SVG sprite (`#star`), not a font glyph, so they stay crisp and identical at every size. It is the page's receipt: the claim sits directly above the link to the thirteen videos it refers to.
 

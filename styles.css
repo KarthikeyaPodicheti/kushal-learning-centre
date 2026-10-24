@@ -204,6 +204,31 @@ section[id] { scroll-margin-top: clamp(72px, 8vw, 96px); }
 .btn-lg { padding: 1.1rem 1.85rem; font-size: 1rem; }
 .btn-sm { padding: 0.66rem 1.1rem; font-size: 0.8125rem; min-height: 44px; }
 
+/* primary CTA with the free-3-days tag built into the ticket */
+.btn-tagged {
+  gap: 0.55rem;
+  padding: 0.55rem 0.55rem 0.55rem 1.55rem;
+}
+.btn-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  margin-left: 0.3rem;
+  padding: 0.5rem 0.75rem 0.46rem;
+  border-radius: 999px;
+  background: var(--marigold-deep);
+  color: var(--ivory);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.14) inset;
+}
+
 /* the seat button breathes a marigold halo */
 @keyframes seat-glow {
   0%, 100% {
@@ -556,34 +581,6 @@ section[id] { scroll-margin-top: clamp(72px, 8vw, 96px); }
   text-transform: uppercase;
   color: var(--muted);
 }
-.portrait-badge {
-  position: absolute;
-  left: -1.6rem;
-  bottom: 8.5rem;
-  width: 86px;
-  height: 86px;
-  border-radius: 50%;
-  background: var(--marigold);
-  color: var(--ink);
-  display: grid;
-  place-content: center;
-  text-align: center;
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  line-height: 1.5;
-  transform: rotate(-8deg);
-  box-shadow: var(--shadow-2);
-}
-.portrait-badge::after {
-  content: "";
-  position: absolute;
-  inset: 6px;
-  border: 1px solid rgba(33, 29, 40, 0.28);
-  border-radius: 50%;
-}
-
 .hero-rule { height: 1px; background: var(--line); position: relative; }
 .hero-rule::before {
   content: "";
@@ -1411,7 +1408,6 @@ details[open] > summary .trick-icon::after { transform: scaleY(0); opacity: 0; }
     max-width: 26rem;
   }
   .portrait-frame { aspect-ratio: 4 / 4.4; }
-  .portrait-badge { left: -0.5rem; bottom: 5.5rem; width: 76px; height: 76px; }
   .portrait::before { inset: 10px -10px -10px 10px; }
 
   .strip-inner { grid-template-columns: 1fr; }
@@ -1483,6 +1479,12 @@ details[open] > summary .trick-icon::after { transform: scaleY(0); opacity: 0; }
   .foot-base { flex-direction: column; gap: 0.4rem; }
   .cta-inline { flex-direction: column; align-items: stretch; }
   .cta-inline .btn { width: 100%; }
+}
+
+@media (max-width: 350px) {
+  .btn-tagged { gap: 0.4rem; padding-left: 1.05rem; }
+  .btn-tagged .btn-arrow { display: none; }
+  .btn-tagged .btn-tag { margin-left: 0.1rem; padding-inline: 0.5rem; font-size: 0.5rem; }
 }
 
 /* ── accessibility ──────────────────────────────────── */
