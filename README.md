@@ -16,8 +16,12 @@ favicon.svg     the mark
 robots.txt      crawl rules
 sitemap.xml     one URL
 assets/         fonts (96 KB, self-hosted), founder photo (WebP + JPEG fallback), 1200×630 social card
-docs/           strategy, positioning, design system, experiments
+docs/           strategy, positioning, design system, experiments, client growth roadmap
+USER.md         user / engagement context and sales direction
+AGENTS.md       operating instructions for AI agents working in this repo
 ```
+
+For the paid-growth proposal built around this site, see [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md). [`USER.md`](USER.md) and [`AGENTS.md`](AGENTS.md) carry the working context for future sessions. This repo is public — keep secrets, client PII, pricing and negotiation notes out of it.
 
 ## Run it locally
 
