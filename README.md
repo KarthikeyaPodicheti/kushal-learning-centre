@@ -3,6 +3,8 @@
 **Live:** https://karthikeyapodicheti.github.io/kushal-learning-centre/  
 **Repo:** https://github.com/KarthikeyaPodicheti/kushal-learning-centre
 
+![Kushal Learning Centre — You were never bad at maths](assets/og-card.jpg)
+
 A single-page site for the free 3-day Vedic Math workshop. Hand-written HTML, CSS and JavaScript. No framework, no build step, no dependencies, no tracking scripts.
 
 ```
@@ -36,7 +38,9 @@ Or simply open `index.html` in a browser — everything works from the file syst
 
 **Any static host:** upload the folder. There is no server-side code.
 
-## Before it goes live — 3 things
+## Launch checklist — 3 things
+
+The Pages site is live. These are the owner actions that remain before promoting it.
 
 1. **Custom domain.** Canonical, OG/Twitter and JSON-LD URLs now point to `https://karthikeyapodicheti.github.io/kushal-learning-centre/`; `robots.txt` and `sitemap.xml` match. If you attach a custom domain, replace every occurrence of that URL in `index.html`, `robots.txt` and `sitemap.xml`. `404.html` detects the project path automatically and will work at a custom root domain too.
 2. **WhatsApp link.** The button points to `https://chat.whatsapp.com/LnTnLmsDnCzIqOTQg9NLGR`. Confirm this invite does not expire — an expired invite is the most expensive bug this page can have.

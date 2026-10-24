@@ -77,9 +77,10 @@ The `ui-ux-pro-max` skill was installed globally and run against the built page.
 
 ## Next Actions
 
-- [ ] Replace the placeholder canonical / OG URLs with the final domain (owner: developer, high)
+- [x] Canonical / OG / JSON-LD / `robots.txt` / `sitemap.xml` URLs set to the GitHub Pages URL (owner: developer, done)
 - [ ] Confirm the WhatsApp invite link is permanent (owner: Deepika, high)
 - [ ] Collect 3 named written testimonials (owner: Deepika, medium)
 - [ ] Add real workshop dates to the WhatsApp group description (owner: Deepika, medium)
-- [ ] Deploy to Cloudflare Pages or Netlify; verify Core Web Vitals in the field (owner: developer, medium)
+- [x] Deployed to GitHub Pages at https://karthikeyapodicheti.github.io/kushal-learning-centre/ (owner: developer, done)
+- [ ] Verify Core Web Vitals on the live Pages URL after real traffic (owner: developer, medium)
 - [ ] After 200 visitors, run the first experiment from `EXPERIMENTS.md` (owner: Deepika, low)
