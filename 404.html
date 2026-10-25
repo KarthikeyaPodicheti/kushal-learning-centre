@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Kushal Learning Centre</title>
+<meta name="description" content="That page has gone missing. Here is the way back.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FFFCF5">
+<script>
+  (function () {
+    var path = location.pathname;
+    var root = location.protocol === "file:" ? "./" :
+      path.indexOf("/kushal-learning-centre/") === 0 ? "/kushal-learning-centre/" : "/";
+    document.write('<base href="' + root + '">');
+  })();
+</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="e404-body">
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="wordmark" href="index.html" aria-label="Kushal Learning Centre — home">
+      <span class="wordmark-k">Kushal</span><span class="wordmark-dot" aria-hidden="true">.</span>
+    </a>
+    <a class="btn btn-primary btn-sm" href="index.html">Back to the workshop</a>
+  </div>
+</header>
+
+<main class="e404">
+  <div class="wrap e404-inner">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Error 404</p>
+    <p class="e404-num" aria-hidden="true">404</p>
+    <h1>This one doesn’t add up.</h1>
+    <p class="lede">The page you were looking for isn’t here. Which is a good reminder that not every problem is yours to solve — sometimes the link is just wrong.</p>
+    <a class="btn btn-primary btn-lg" href="index.html">
+      Back to the free workshop
+      <span class="btn-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-base" style="border-top:0">
+    <p>© <span id="year">2026</span> Deepika Ainapur · Kushal Learning Centre</p>
+    <p>Made for the mothers who were told they couldn’t.</p>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
