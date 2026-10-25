@@ -38,24 +38,30 @@ The outcome is not "a prettier page". The outcome is:
 - Custom domain connection and HTTPS.
 - Branded email setup guidance.
 - Launch of the current static site on the domain.
+- Links to the existing Graphy catalogue, Instagram, LinkedIn, YouTube and Google Business Profile.
+- A public contact block and contact page with owner-approved phone, WhatsApp and email.
 - Seat-reservation form and thank-you page.
 - Formspree submission, email notification and Google Sheet.
 - Confirmed workshop dates, timezone, calendar file and basic event schema.
 - GA4 analytics, UTM capture, CTA events and consent banner.
 - Privacy, terms, refund and contact pages.
 - Footer legal links and form consent checkbox.
+- Local business schema and NAP block once the service area and contact details are confirmed.
+- `favicon.ico`, web manifest and apple-touch icon.
+- Uptime monitoring for the site and the WhatsApp link.
 - Mobile, accessibility and form QA.
 - 30 days of post-launch support.
 - One-page handover guide.
 
 ### Not included
 
-- Razorpay or any paid checkout.
+- Razorpay or any paid checkout. Phase 1 links to Graphy; a custom checkout is only needed if Graphy cannot support the funnel.
 - Automated WhatsApp reminders.
-- Student login or LMS.
+- A custom student login or LMS. Graphy already provides course delivery.
 - Full CMS/admin dashboard.
 - Paid ads management.
 - Blog/SEO content programme.
+- Local citation building and Google Business Profile posting.
 - Multilingual site.
 - Custom backend or database.
 

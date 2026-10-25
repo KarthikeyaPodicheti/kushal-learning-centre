@@ -16,14 +16,14 @@ src/favicon.svg     the mark
 src/robots.txt      crawl rules
 src/sitemap.xml     one URL
 src/assets/         fonts (96 KB, self-hosted), founder photo, 1200×630 social card
-docs/               all Markdown: README, context, strategy, phases, design
+docs/               all Markdown: README, context, strategy, phases, design, local-business audit
 scripts/            deployment helper
 opencode.json       tells the agent to read docs/AGENTS.md and docs/USER.md
 ```
 
 All Markdown lives in `docs/`. All deployable website files live in `src/`.
 
-For the paid-growth proposal built around this site, see [`CLIENT-GROWTH-ROADMAP.md`](CLIENT-GROWTH-ROADMAP.md), [`1phase.md`](1phase.md) and [`phase2.md`](phase2.md). [`USER.md`](USER.md) and [`AGENTS.md`](AGENTS.md) carry the working context for future sessions. This repo is public — keep secrets, client PII, pricing and negotiation notes out of it.
+For the paid-growth proposal built around this site, see [`CLIENT-GROWTH-ROADMAP.md`](CLIENT-GROWTH-ROADMAP.md), [`1phase.md`](1phase.md) and [`phase2.md`](phase2.md). For the local-business readiness audit and the missing trust, contact, legal and local-presence pieces, see [`LOCAL-BUSINESS-WEBSITE-CHECKLIST.md`](LOCAL-BUSINESS-WEBSITE-CHECKLIST.md). [`USER.md`](USER.md) and [`AGENTS.md`](AGENTS.md) carry the working context for future sessions. This repo is public — keep secrets, client PII, pricing and negotiation notes out of it.
 
 ## Run it locally
 
