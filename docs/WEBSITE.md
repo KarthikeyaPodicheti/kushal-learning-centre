@@ -85,7 +85,7 @@ _Filled in during the final review (Phase 10)._
 | Pull-quote measure applied to the block, not the text, so the quote ran wide | Low | `max-width: 22ch` moved onto the paragraph | Fixed |
 | A doubled hairline appeared under the stories block | Low | Redundant border removed | Fixed |
 | Story grid used 1280 px YouTube stills, adding a third-party DNS lookup and 3 requests | Medium | No remote images remain; the page now makes zero third-party requests | Fixed |
-| Canonical, OG and JSON-LD URLs still point at the Lovable preview domain | Blocker at launch | Documented in `README.md`; owner must swap in the final domain (5 places + `robots.txt` + `sitemap.xml`) | Open |
+| Canonical, OG and JSON-LD URLs still point at the Lovable preview domain | Blocker at launch | Updated to the GitHub Pages URL in `src/index.html`, `src/robots.txt` and `src/sitemap.xml`; replace again when a custom domain is connected | Fixed |
 | WhatsApp invite could expire, which would silently kill the only conversion path | Blocker at launch | Owner to confirm the invite is permanent | Open |
 | Workshop dates are not printed on the page | Medium | Deliberate: dates live in the group description so they can change without a deploy | By design |
 | Thirteen story links all read "Story 01 … Watch", so the proof was specific on video but anonymous on the page | High | Added the real subject of each video, taken from the video's own YouTube title or tags: Rita's classes, Karuna on marketing, Ambika's maths turnaround, and so on | Fixed |

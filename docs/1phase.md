@@ -387,7 +387,7 @@ Include:
 - Consent checkbox on the form, required and not pre-checked.
 - Footer links on every page.
 - Cookie banner links to Privacy.
-- Add legal pages to `sitemap.xml`.
+- Add legal pages to `src/sitemap.xml`.
 - Do not hide the legal links in small print only.
 
 ### 7.6 Review
@@ -400,20 +400,20 @@ I can write customised drafts, but this is not legal advice. Deepika or her CA/l
 
 | File | Change |
 |---|---|
-| `index.html` | Date card, form CTA, consent link, footer legal links, tracking hooks |
-| `styles.css` | Form, date card, thank-you and legal page styles |
-| `script.js` | UTM capture, form events, consent, CTA tracking |
-| `data/workshop.json` | Dates, timezone, language, batches |
-| `workshop.ics` | Calendar download |
-| `reserve/index.html` | Reservation form |
-| `thank-you/index.html` | Confirmation, WhatsApp CTA, calendar |
-| `privacy/index.html` | Privacy Policy |
-| `terms/index.html` | Terms of Use |
-| `refund/index.html` | Refund Policy |
-| `contact/index.html` | Contact details |
-| `sitemap.xml` | Add new pages and domain |
-| `robots.txt` | Update sitemap URL |
-| `404.html` | Update base path for the custom domain |
+| `src/index.html` | Date card, form CTA, consent link, footer legal links, tracking hooks |
+| `src/styles.css` | Form, date card, thank-you and legal page styles |
+| `src/script.js` | UTM capture, form events, consent, CTA tracking |
+| `src/data/workshop.json` | Dates, timezone, language, batches |
+| `src/workshop.ics` | Calendar download |
+| `src/reserve/index.html` | Reservation form |
+| `src/thank-you/index.html` | Confirmation, WhatsApp CTA, calendar |
+| `src/privacy/index.html` | Privacy Policy |
+| `src/terms/index.html` | Terms of Use |
+| `src/refund/index.html` | Refund Policy |
+| `src/contact/index.html` | Contact details |
+| `src/sitemap.xml` | Add new pages and domain |
+| `src/robots.txt` | Update sitemap URL |
+| `src/404.html` | Update base path for the custom domain |
 
 Use folder-based `index.html` files for clean URLs. No framework or build step is required.
 
@@ -592,4 +592,4 @@ Third-party costs are passed through at actuals unless the proposal says otherwi
 
 - [`AGENTS.md`](AGENTS.md) — operating rules for this repo.
 - [`USER.md`](USER.md) — user and engagement context.
-- [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md) — full audit, feature roadmap and pitch outline.
+- [`CLIENT-GROWTH-ROADMAP.md`](CLIENT-GROWTH-ROADMAP.md) — full audit, feature roadmap and pitch outline.

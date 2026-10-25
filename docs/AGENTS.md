@@ -18,8 +18,8 @@
 - **Live:** <https://karthikeyapodicheti.github.io/kushal-learning-centre/>
 - **Repo:** <https://github.com/KarthikeyaPodicheti/kushal-learning-centre>
 - **Original client site:** <https://kushallearningcentre.lovable.app/>
-- **Stack:** hand-written `index.html`, `styles.css`, `script.js`, `404.html`; no framework, no build step, no npm dependencies.
-- **Deploy:** GitHub Pages, branch `main`, root. `.nojekyll` is included. Every push to `main` republishes.
+- **Stack:** hand-written `src/index.html`, `src/styles.css`, `src/script.js`, `src/404.html`; no framework, no npm dependencies.
+- **Deploy:** GitHub Pages serves the generated `gh-pages` branch. `scripts/deploy-pages.sh` publishes `src/` there after changes are committed to `main`. Do not edit `gh-pages` by hand.
 - **Theme:** fresh light “Marigold & Linen” system. Ivory, linen, pale marigold, sage and blush. Solid colour fields; no dark inversion.
 - **Primary CTA:** “Reserve my free seat” → WhatsApp group. The free-3-days tag now sits inside the hero CTA.
 - **Proof:** owner-confirmed “13 of 13 students rated the training five stars”; 13 real YouTube testimonial links. Never invent proof.
@@ -51,7 +51,7 @@ Keep the marketing site separate from the application layer unless there is a st
 
 ### Phase 1 — static-first additions
 
-- **Custom domain:** connect `kushallearningcentre.com` / `.in` (confirm which the client owns) through Cloudflare DNS. Update canonical, OG/Twitter image URLs, JSON-LD, `robots.txt`, `sitemap.xml` and the `404.html` base path.
+- **Custom domain:** connect `kushallearningcentre.com` / `.in` (confirm which the client owns) through Cloudflare DNS. Update canonical, OG/Twitter image URLs, JSON-LD, `src/robots.txt`, `src/sitemap.xml` and the `src/404.html` base path.
 - **Lead capture:** Tally, Formspree or a Supabase-backed form. Ask for the minimum: name, WhatsApp number, preferred batch, consent. Redirect to a thank-you page with the WhatsApp invite and a tracked conversion.
 - **Analytics:** GA4 and Meta Pixel only with consent; track `whatsapp_click`, `reserve_click`, form submit and payment start. Use UTM links in Instagram/YouTube bios.
 - **Payments (fast path):** Razorpay Payment Links or a Razorpay Payment Page. No secret key in the static site. Payment webhook goes to a serverless function or automation (Cloudflare Worker, Vercel function, Make/Zapier) and writes to a database/Sheet.
@@ -86,7 +86,7 @@ Keep the marketing site separate from the application layer unless there is a st
 
 ## Sales and proposal work
 
-- A client-safe growth roadmap lives in [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md).
+- A client-safe growth roadmap lives in [`CLIENT-GROWTH-ROADMAP.md`](CLIENT-GROWTH-ROADMAP.md).
 - The Phase 1 delivery scope, implementation detail and acceptance criteria live in [`1phase.md`](1phase.md).
 - The Phase 2 enrollment-engine scope lives in [`phase2.md`](phase2.md).
 - Keep **pricing, negotiation notes and internal sales tactics out of this public repo**. Discuss them with the user or put them in a private repo/document.
@@ -97,36 +97,43 @@ Keep the marketing site separate from the application layer unless there is a st
 ## Repo map
 
 ```
-index.html                     page + metadata + JSON-LD
-styles.css                     full visual system
-script.js                      menu, header state, reveals, sticky bar
-404.html                       on-brand not-found page
-assets/                        fonts, founder photo, social card
-docs/                          design, positioning, experiments, growth roadmap
-1phase.md                      Phase 1 delivery scope and acceptance criteria
-phase2.md                      Phase 2 delivery scope: checkout, reminders, admin
-USER.md                        user profile / engagement context
-AGENTS.md                      this file
+src/index.html                 page + metadata + JSON-LD
+src/styles.css                 full visual system
+src/script.js                  menu, header state, reveals, sticky bar
+src/404.html                   on-brand not-found page
+src/robots.txt                 crawl rules
+src/sitemap.xml                site URLs
+src/assets/                    fonts, founder photo, social card
+docs/README.md                 project README and run/deploy guide
+docs/AGENTS.md                 this file
+docs/USER.md                   user profile / engagement context
+docs/1phase.md                 Phase 1 delivery scope and acceptance criteria
+docs/phase2.md                 Phase 2 delivery scope: checkout, reminders, admin
+docs/CLIENT-GROWTH-ROADMAP.md  audit, features, integration and pitch
+scripts/deploy-pages.sh        publishes src/ to the gh-pages branch
+opencode.json                  agent instruction imports
 ```
 
 ## Local commands
 
 ```bash
-cd /data/data/com.termux/files/home/kushal-learning-centre
-
-# preview (if the preview server is running)
+# preview from the site source
+cd /data/data/com.termux/files/home/kushal-learning-centre/src
+python3 -m http.server 4173
 # http://127.0.0.1:4173/
 
-# structural + contrast check
+# structural + contrast check (run from src/)
 node /data/data/com.termux/files/home/.cache/opencode/tmp/opencode/check.mjs
 
-# layout/overflow check
+# layout/overflow check (run from src/)
 node /data/data/com.termux/files/home/.cache/opencode/tmp/opencode/layout.mjs
 
-# deploy
+# deploy from the repo root
+cd /data/data/com.termux/files/home/kushal-learning-centre
 git add -A
 git commit -m "Describe the change"
 git push origin main
+./scripts/deploy-pages.sh
 
 # verify Pages
 gh api repos/KarthikeyaPodicheti/kushal-learning-centre/pages/builds/latest --jq '.status'
@@ -140,7 +147,7 @@ gh api repos/KarthikeyaPodicheti/kushal-learning-centre/pages/builds/latest --jq
 4. Text contrast checked; no new low-contrast pairs.
 5. HTML tags/anchors/assets valid; no console errors or failed assets.
 6. `prefers-reduced-motion` still works.
-7. Live GitHub Pages build succeeds after push.
+7. Live GitHub Pages build succeeds after running `./scripts/deploy-pages.sh`.
 8. If a new integration is added, record the service, env vars, owner, cost and data flow in the roadmap or a private doc.
 
 ## Open questions for the client

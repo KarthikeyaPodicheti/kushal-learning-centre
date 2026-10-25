@@ -199,7 +199,7 @@ The current page is fast because it has no server. Preserve that. Add business f
 
 ### Security and privacy
 
-- No API secrets in `index.html`, `script.js` or the public repo.
+- No API secrets in `src/index.html`, `src/script.js` or the public repo.
 - Verify Razorpay webhooks server-side; a success redirect is not proof of payment.
 - Use Supabase Row Level Security for every student table and private file.
 - Collect only what is needed; add consent, privacy and deletion paths.
