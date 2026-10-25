@@ -18,11 +18,12 @@ sitemap.xml     one URL
 assets/         fonts (96 KB, self-hosted), founder photo (WebP + JPEG fallback), 1200×630 social card
 docs/           strategy, positioning, design system, experiments, client growth roadmap
 1phase.md        Phase 1 delivery scope: lead capture, dates, tracking, legal pages
+phase2.md        Phase 2 delivery scope: checkout, enrollment, reminders, admin
 USER.md         user / engagement context and sales direction
 AGENTS.md       operating instructions for AI agents working in this repo
 ```
 
-For the paid-growth proposal built around this site, see [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md) and [`1phase.md`](1phase.md). [`USER.md`](USER.md) and [`AGENTS.md`](AGENTS.md) carry the working context for future sessions. This repo is public — keep secrets, client PII, pricing and negotiation notes out of it.
+For the paid-growth proposal built around this site, see [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md), [`1phase.md`](1phase.md) and [`phase2.md`](phase2.md). [`USER.md`](USER.md) and [`AGENTS.md`](AGENTS.md) carry the working context for future sessions. This repo is public — keep secrets, client PII, pricing and negotiation notes out of it.
 
 ## Run it locally
 
