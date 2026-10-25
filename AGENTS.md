@@ -87,6 +87,7 @@ Keep the marketing site separate from the application layer unless there is a st
 ## Sales and proposal work
 
 - A client-safe growth roadmap lives in [`docs/CLIENT-GROWTH-ROADMAP.md`](docs/CLIENT-GROWTH-ROADMAP.md).
+- The Phase 1 delivery scope, implementation detail and acceptance criteria live in [`1phase.md`](1phase.md).
 - Keep **pricing, negotiation notes and internal sales tactics out of this public repo**. Discuss them with the user or put them in a private repo/document.
 - The user’s pitch should sell outcomes: more tracked leads, better show-up, paid enrollments, less manual WhatsApp work, a credible owned domain, and a path to recurring revenue.
 - Do not promise revenue. Use the client’s real fee/batch numbers to frame payback; ask for them first.
@@ -101,6 +102,7 @@ script.js                      menu, header state, reveals, sticky bar
 404.html                       on-brand not-found page
 assets/                        fonts, founder photo, social card
 docs/                          design, positioning, experiments, growth roadmap
+1phase.md                      Phase 1 delivery scope and acceptance criteria
 USER.md                        user profile / engagement context
 AGENTS.md                      this file
 ```
