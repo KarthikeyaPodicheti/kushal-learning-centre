@@ -39,7 +39,7 @@ Then open http://127.0.0.1:4173/. Or simply open `src/index.html` in a browser â
 **GitHub Pages:** the live site is served from the generated `gh-pages` branch. After committing changes to `main`, run:
 
 ```bash
-./scripts/deploy-pages.sh
+bash scripts/deploy-pages.sh
 ```
 
 That copies the contents of `src/` to `gh-pages` and pushes it. Do not edit `gh-pages` by hand. The live URL is https://karthikeyapodicheti.github.io/kushal-learning-centre/.

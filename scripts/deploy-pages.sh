@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Run with: bash scripts/deploy-pages.sh
 set -euo pipefail
 
 cd "$(git rev-parse --show-toplevel)"

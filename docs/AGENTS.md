@@ -133,7 +133,7 @@ cd /data/data/com.termux/files/home/kushal-learning-centre
 git add -A
 git commit -m "Describe the change"
 git push origin main
-./scripts/deploy-pages.sh
+bash scripts/deploy-pages.sh
 
 # verify Pages
 gh api repos/KarthikeyaPodicheti/kushal-learning-centre/pages/builds/latest --jq '.status'
@@ -147,7 +147,7 @@ gh api repos/KarthikeyaPodicheti/kushal-learning-centre/pages/builds/latest --jq
 4. Text contrast checked; no new low-contrast pairs.
 5. HTML tags/anchors/assets valid; no console errors or failed assets.
 6. `prefers-reduced-motion` still works.
-7. Live GitHub Pages build succeeds after running `./scripts/deploy-pages.sh`.
+7. Live GitHub Pages build succeeds after running `bash scripts/deploy-pages.sh`.
 8. If a new integration is added, record the service, env vars, owner, cost and data flow in the roadmap or a private doc.
 
 ## Open questions for the client
