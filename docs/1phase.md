@@ -38,7 +38,7 @@ The outcome is not "a prettier page". The outcome is:
 - Custom domain connection and HTTPS.
 - Branded email setup guidance.
 - Launch of the current static site on the domain.
-- Links to the existing Graphy catalogue, Instagram, LinkedIn, YouTube and Google Business Profile.
+- Links to the Instagram, LinkedIn, YouTube and Google Business profiles Deepika approves.
 - A public contact block and contact page with owner-approved phone, WhatsApp and email.
 - Seat-reservation form and thank-you page.
 - Formspree submission, email notification and Google Sheet.
@@ -55,9 +55,9 @@ The outcome is not "a prettier page". The outcome is:
 
 ### Not included
 
-- Razorpay or any paid checkout. Phase 1 links to Graphy; a custom checkout is only needed if Graphy cannot support the funnel.
+- Razorpay or any paid checkout.
 - Automated WhatsApp reminders.
-- A custom student login or LMS. Graphy already provides course delivery.
+- Student login or LMS.
 - Full CMS/admin dashboard.
 - Paid ads management.
 - Blog/SEO content programme.

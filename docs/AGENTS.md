@@ -23,15 +23,15 @@
 - **Theme:** fresh light “Marigold & Linen” system. Ivory, linen, pale marigold, sage and blush. Solid colour fields; no dark inversion.
 - **Primary CTA:** “Reserve my free seat” → WhatsApp group. The free-3-days tag now sits inside the hero CTA.
 - **Proof:** owner-confirmed “13 of 13 students rated the training five stars”; 13 real YouTube testimonial links. Never invent proof.
-- **Existing public assets:** Graphy paid platform, Instagram, LinkedIn, YouTube, and a Google Business Page (confirm exact URLs and ownership). The site does not link them yet. Do not expose phone numbers or addresses in this public repo.
+- **Existing public assets:** Instagram, LinkedIn, YouTube, and a Google Business Page (confirm exact URLs and ownership). The site does not link them yet. Do not expose phone numbers or addresses in this public repo.
 
 ## What the user is trying to do
 
 The user is preparing a **paid proposal** for the client. The site should demonstrate the quality of the work, but the actual sales opportunity is the missing business layer around it:
 
-1. **Owned foundation:** domain, branded email, live site, SEO, analytics, lead form, WhatsApp tracking, real workshop dates, privacy/terms, and links to the existing Graphy, Instagram, LinkedIn, YouTube and Google Business assets.
-2. **Enrollment engine:** paid-course page linked to Graphy first; custom Razorpay/UPI only if Graphy cannot support the funnel; batches, reminders, follow-up, referrals, simple admin.
-3. **Academy:** already covered by Graphy. Build a custom LMS only if Graphy becomes a real constraint.
+1. **Owned foundation:** domain, branded email, live site, SEO, analytics, lead form, WhatsApp tracking, real workshop dates, privacy/terms, and links to the existing Instagram, LinkedIn, YouTube and Google Business assets.
+2. **Enrollment engine:** paid-course page, Razorpay/UPI checkout, batches and seats, automated reminders, follow-up, referrals, simple admin.
+3. **Academy (deferred):** login, recorded lessons, worksheets, progress, certificates, community. Only when volume justifies it.
 4. **Retainer:** maintenance, content/SEO, WhatsApp automation, experiment support.
 
 Do not turn the client site into a portfolio for the user. The page should stay focused on Deepika’s customer and the free workshop.
@@ -52,7 +52,7 @@ Keep the marketing site separate from the application layer unless there is a st
 
 ### Phase 1 — static-first additions
 
-- **Existing assets:** link Graphy, Instagram, LinkedIn, YouTube and the confirmed Google Business Profile before building anything new.
+- **Existing assets:** link the Instagram, LinkedIn, YouTube and Google Business profiles Deepika approves before building anything new.
 - **Custom domain:** connect `kushallearningcentre.com` / `.in` (confirm which the client owns) through Cloudflare DNS. Update canonical, OG/Twitter image URLs, JSON-LD, `src/robots.txt`, `src/sitemap.xml` and the `src/404.html` base path.
 - **Lead capture:** Tally, Formspree or a Supabase-backed form. Ask for the minimum: name, WhatsApp number, preferred batch, consent. Redirect to a thank-you page with the WhatsApp invite and a tracked conversion.
 - **Analytics:** GA4 and Meta Pixel only with consent; track `whatsapp_click`, `reserve_click`, form submit and payment start. Use UTM links in Instagram/YouTube bios.
@@ -71,13 +71,11 @@ Keep the marketing site separate from the application layer unless there is a st
 
 ### Phase 3 — academy / LMS (deferred)
 
-**Graphy is already live** at `deepikaainapur.graphy.com` and handles login, course delivery and policy pages. Do not sell a new LMS as a growth project. Link Graphy first and revisit this phase only if its limits cost more than a custom build.
-
-- If a custom academy is ever justified: put the student experience on an `app.` or `learn.` subdomain, not inside the marketing page.
+- Put the student experience on an `app.` or `learn.` subdomain, not inside the marketing page.
 - Use Supabase Auth + RLS; private video on Mux/Bunny/Cloudflare Stream; worksheets on R2/Supabase Storage.
 - Core screens: dashboard, modules, lesson player, worksheets, progress, certificate, support.
 - Certificate: real completion criteria, unique verification ID, brand-consistent PDF.
-- Do not build an LMS just to say you did.
+- If the client needs speed more than custom UX, white-label an existing course platform (Teachable/Thinkific or similar) and link it. Do not build an LMS just to say you did.
 
 ### Integration cautions
 
@@ -168,4 +166,4 @@ gh api repos/KarthikeyaPodicheti/kushal-learning-centre/pages/builds/latest --jq
 
 ## Short version for a fresh agent
 
-Read `USER.md`, keep the site fast and honest, do not redesign the light theme without an explicit request, and help the user turn this strong demo into a paid, measurable enrollment system for the client. The next sellable layer is **contact + legal + lead capture + real dates + a clear path into Graphy + reminders**, not another landing-page rewrite or a custom LMS.
+Read `USER.md`, keep the site fast and honest, do not redesign the light theme without an explicit request, and help the user turn this strong demo into a paid, measurable enrollment system for the client. The next sellable layer is **lead capture + real dates + paid checkout + reminders**, not another landing-page rewrite.

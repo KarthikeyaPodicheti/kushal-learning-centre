@@ -55,7 +55,7 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 | 1 | The site runs on a `github.io` address, not an owned domain | A local business looks temporary when its address is a developer host. It also blocks branded email and clean local citations. | Critical | Developer + Deepika |
 | 2 | No phone, email, contact page, service area or hours | A customer cannot check that the business is real, reach a human, or know where it works. | Critical | Deepika + Developer |
 | 3 | No privacy, terms, refund or contact pages | The free workshop collects WhatsApp details; the paid course takes money. Both need clear policies. | Critical | Developer + Deepika/legal review |
-| 4 | The existing paid course platform is not linked | Graphy already hosts the paid programme. The site sends people to a free group and then stops. | High | Developer + Deepika |
+| 4 | The paid course path is not visible | The site sends people to a free group and stops. No paid course link or next step. | High | Developer + Deepika |
 | 5 | Public Instagram, LinkedIn, YouTube and Google Business presence is not linked | The business already has proof and reach; the website hides it. This also weakens search trust. | High | Developer + Deepika |
 | 6 | No real workshop dates or times | “Dates in the group” is honest, but it adds a step and weakens the decision. | High | Deepika |
 | 7 | No lead form, email capture, CRM or thank-you page | Every lead depends on a WhatsApp group invite. If the invite expires, the funnel dies. | High | Developer + Deepika |
@@ -92,15 +92,15 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 | Real workshop dates and times | ❌ | High | Dates live only in the WhatsApp group. |
 | Free vs paid is clear | ✅ | — | The free workshop and the later paid programme are both disclosed. |
 | Paid programme details and price | ⚠️ | High | The paid programme is mentioned, but there is no link, price or next step. |
-| Link to the existing paid course platform | ❌ | High | Graphy already hosts paid courses at `deepikaainapur.graphy.com`; the site does not link to it. |
-| Checkout or payment path | ⚠️ | High | Graphy appears to handle payment and course delivery. Confirm the exact purchase path. |
+| Link to the existing paid course platform | ❌ | High | A paid course platform exists; confirm the exact course URL and link it. |
+| Checkout or payment path | ⚠️ | High | An existing platform may handle payment and course delivery. Confirm the exact purchase path. |
 | Lead capture form | ❌ | High | The WhatsApp group is the only capture mechanism. |
 | Email or WhatsApp follow-up | ❌ | High | Follow-up appears manual and group-based. |
 | Thank-you or confirmation page | ❌ | Medium | No page after a form or click that sets expectations. |
-| Refund or risk reversal | ❌ | Critical before payment | No refund policy or guarantee. Graphy has a refund policy for its paid courses; confirm it applies. |
+| Refund or risk reversal | ❌ | Critical before payment | No refund policy or guarantee on the marketing site. Confirm the policy for the paid course. |
 | Real scarcity only | ✅ | — | “Limited seats” is used without a fake count or countdown. |
 | Direct WhatsApp fallback | ⚠️ | High | A group invite is the only entry. A direct `wa.me` link is safer if the group invite expires. |
-| Learning platform | ✅ | — | Graphy already provides course delivery and login. Do not build an LMS. |
+| Learning platform | ✅ | — | An existing platform provides course delivery and login. Do not build an LMS without checking it. |
 
 ### 3. Proof and trust
 
@@ -131,7 +131,7 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 | `robots.txt` and `sitemap.xml` | ✅ | — | Present and valid. |
 | Organization, Course and FAQ schema | ⚠️ | Medium | Present, but the FAQ schema has four questions while the page shows six. Add the missing two. |
 | Local business schema | ❌ | High | No address, contact point, opening hours, map or `sameAs` links. |
-| `sameAs` links to social and Graphy | ❌ | High | No links to Instagram, LinkedIn, YouTube, Google Business Profile or Graphy. |
+| `sameAs` links to social and course platform | ❌ | High | No links to Instagram, LinkedIn, YouTube, Google Business Profile or the course platform. |
 | `Course` dates, price and URL | ⚠️ | Medium | The Course schema has no dates, offer or link to the paid platform. |
 | Search Console and Bing verification | ⚠️ | High | Not documented. |
 | Internal links | ✅ | — | Section navigation and footer links work. |
@@ -159,7 +159,7 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 | Accessibility | ✅ | — | Automated checks pass; a manual screen-reader pass is still worth doing. |
 | Privacy policy | ❌ | Critical | Missing. |
 | Terms of use | ❌ | Critical | Missing. |
-| Refund policy | ❌ | Critical before payment | Missing on the marketing site; Graphy has one for paid courses. |
+| Refund policy | ❌ | Critical before payment | Missing on the marketing site; confirm the paid-course policy. |
 | DPDP / consent language | ❌ | High | No privacy or consent language for WhatsApp numbers. |
 
 ### 6. Local presence
@@ -189,7 +189,7 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 | Automated reminders | ❌ | High | No reminders for workshop days, no-shows or the paid offer. |
 | Review request flow | ❌ | Medium | No systematic ask after a student result. |
 | Content update process | ❌ | Medium | Copy is edited in code. Deepika cannot update dates or testimonials herself. |
-| Ownership and handover | ⚠️ | High | Domain, hosting, Graphy, social accounts and analytics ownership need a written handover. |
+| Ownership and handover | ⚠️ | High | Domain, hosting, course platform, social accounts and analytics ownership need a written handover. |
 | Conversion events | ❌ | High | No `whatsapp_click`, `reserve_click`, form submit or payment start events. |
 | UTM links | ❌ | High | Instagram and YouTube links are not tagged, so traffic cannot be attributed. |
 | Monthly report and one metric | ❌ | Medium | No live reporting rhythm. |
@@ -200,12 +200,12 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 |---|---|---|---|
 | Privacy policy | ❌ | Critical | Needed for WhatsApp leads and any future form. |
 | Terms of use | ❌ | Critical | Needed before paid enrollment. |
-| Refund policy | ❌ | Critical before payment | Needed for the paid programme; confirm Graphy’s policy and link it. |
+| Refund policy | ❌ | Critical before payment | Needed for the paid programme; confirm the policy and link it. |
 | Contact page | ❌ | Critical | Needed for trust and legal notices. |
 | Consent for WhatsApp contact | ⚠️ | High | No explicit opt-in language. |
 | DPDP-aware consent | ❌ | High | India’s data rules need clear purpose and consent. |
 | Cookie policy | N/A | — | Add only if cookies or pixels are introduced. |
-| Payment security | ⚠️ | High | Graphy appears to handle payment. Confirm PCI and refund responsibility. |
+| Payment security | ⚠️ | High | The course platform may handle payment. Confirm PCI and refund responsibility. |
 | Testimonial and image consent | ⚠️ | Critical | Confirm written consent for the 13 stories, names and founder photo. |
 | Income disclaimer | ✅ | — | Present and honest. |
 
@@ -232,11 +232,11 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 
 ## Recommended order
 
-**Phase 0 — Confirm the facts.** Get the domain, phone, email, service area, hours, Google Business Profile, social URLs, Graphy course URL, workshop dates, course fee, refund policy, testimonial consent and language preference. Nothing below should be invented.
+**Phase 0 — Confirm the facts.** Get the domain, phone, email, service area, hours, Google Business Profile, social URLs, course-platform URL, workshop dates, course fee, refund policy, testimonial consent and language preference. Nothing below should be invented.
 
 **Phase 1 — Make it a real business.** Owned domain, branded email, contact page, service area, hours, Google Business Profile link, social links, privacy, terms and refund pages. Update canonical, Open Graph, JSON-LD, `robots.txt` and `sitemap.xml` to the new domain.
 
-**Phase 2 — Connect the existing assets.** Link Graphy, Instagram, LinkedIn, YouTube and Google reviews. Add a direct WhatsApp fallback. Do not build an LMS; Graphy already does that job.
+**Phase 2 — Connect the existing assets.** Link the course platform, Instagram, LinkedIn, YouTube and Google reviews. Add a direct WhatsApp fallback. Do not build an LMS until the platform decision is confirmed.
 
 **Phase 3 — Capture and measure.** Add a small lead form with consent, a thank-you page, a CRM or Sheet, analytics, conversion events, UTM links and Search Console. The first metric should be “qualified WhatsApp joins per week,” not page views.
 
@@ -253,11 +253,11 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 5. What are the opening hours or response times?
 6. What is the exact Google Business Profile URL?
 7. What are the Instagram, LinkedIn and YouTube profile URLs she wants linked?
-8. What is the Graphy course catalogue URL, and which paid programme should the site point to?
+8. Deepika has confirmed the Graphy course platform is hers. Confirm whether it should be linked and whether it covers checkout and delivery.
 9. What are the next workshop dates, times, language and time zone?
 10. What is the course fee, batch size and refund policy?
 11. Does she have written consent for the 13 videos, the names used and her photograph?
-12. Who owns the domain, hosting, Graphy account, social accounts and analytics after handover?
+12. Who owns the domain, hosting, course platform, social accounts and analytics after handover?
 
 ## Cautions
 
@@ -274,7 +274,6 @@ This is not a redesign brief. The page already does the hard part well. The gaps
 
 - Live site: <https://karthikeyapodicheti.github.io/kushal-learning-centre/>
 - Repo: <https://github.com/KarthikeyaPodicheti/kushal-learning-centre>
-- Public paid platform: <https://deepikaainapur.graphy.com/>
 - Public profiles found: Instagram `@deepikaainapur`, LinkedIn, YouTube teacher-training playlist, and references to a Google Business Page.
 - Automated checks: HTML tags and anchors, missing assets, contrast, image alt text, H1 count, `<details>` count.
 - HTTP checks: HTTP/2, HSTS, cache headers, `favicon.ico` and `site.webmanifest` status.

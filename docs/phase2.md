@@ -4,8 +4,6 @@ Phase 2 is the **enrollment engine**. Phase 1 captures interest; Phase 2 turns i
 
 The key architectural decision: **keep the marketing site static, and build the paid system as a separate app.**
 
-> **First check Graphy.** Graphy already hosts paid courses at `deepikaainapur.graphy.com`, with login, course delivery and its own Terms, Privacy, Contact and Refund pages. If its checkout, batches and reminders are enough, link it from the marketing site and **do not build the custom system in this document**. Build Phase 2 only if Graphy blocks the funnel or costs more than a custom build.
-
 GitHub Pages cannot securely handle payments, webhooks, logins or admin data. So:
 
 - `kushallearningcentre.com` → static marketing site
@@ -30,7 +28,7 @@ GitHub Pages cannot securely handle payments, webhooks, logins or admin data. So
 8. **Purchase tracking** in GA4 and Meta.
 9. Updated **privacy, terms and refund pages** for payments.
 
-Phase 2 does **not** include the student portal/LMS. After payment, students get onboarding by email/WhatsApp. Graphy already covers login and course delivery; a custom Phase 3 portal is only worth building if Graphy is outgrown.
+Phase 2 does **not** include the student portal/LMS. After payment, students get onboarding by email/WhatsApp. The login portal is Phase 3.
 
 ---
 

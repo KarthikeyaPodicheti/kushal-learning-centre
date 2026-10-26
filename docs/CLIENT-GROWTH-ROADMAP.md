@@ -67,7 +67,6 @@ It is a credible **Phase 1**. It is not yet the enrollment system.
 
 Public research found assets the site does not use:
 
-- **Graphy already hosts paid courses** at <https://deepikaainapur.graphy.com/>. It has login, course delivery and its own Terms, Privacy, Contact and Refund pages.
 - **Public social profiles exist:** Instagram `@deepikaainapur`, LinkedIn, and a YouTube teacher-training playlist.
 - **Public posts reference a Google Business Page and Google reviews.** Confirm the exact listing and link it; do not create a duplicate.
 - **Public posts point to a Kanpur presence.** Confirm the exact service area and whether there is a public class address. Do not publish a home address.
@@ -95,7 +94,7 @@ The website should not just describe the transformation. It should **operate the
 
 - Custom domain and branded email (`hello@`, `support@`).
 - Launch the current rebuilt site on the domain.
-- Link the existing Graphy catalogue, Instagram, LinkedIn, YouTube and Google Business Profile.
+- Link the Instagram, LinkedIn, YouTube and Google Business profiles Deepika approves.
 - Add a public contact block and contact page with owner-approved phone, WhatsApp and email.
 - Replace the general WhatsApp link with a **prefilled WhatsApp message** or a short seat form that redirects to the group.
 - Capture: name, WhatsApp number, preferred batch, grade interest, consent. Keep it to three or four fields.
@@ -114,8 +113,7 @@ The website should not just describe the transformation. It should **operate the
 **Outcome:** the free workshop has a measurable paid next step.
 
 - Paid course page: curriculum, outcomes, who it is for, bonuses, price, payment options, start date, refund policy, FAQ.
-- **Link to Graphy checkout first.** It already handles course delivery. Build Razorpay only if Graphy cannot support the offer, UPI/cards, refunds or the required funnel.
-- If a custom checkout is needed: Razorpay with UPI, cards and EMI where eligible. Never put secret keys in the static site.
+- Razorpay checkout with UPI, cards and EMI where eligible. Never put secret keys in the static site.
 - Payment webhook → database/Sheet → confirmation email/WhatsApp → onboarding.
 - Batch management: dates, time zone, language, capacity, waitlist. Only show real seats.
 - Automated reminders: before each workshop day, replay link, post-workshop offer, no-show follow-up.
@@ -125,11 +123,11 @@ The website should not just describe the transformation. It should **operate the
 
 **Sell it as:** “Turn the free workshop from a group chat into a predictable enrollment pipeline.”
 
-### Phase 3 — Academy (deferred; Graphy already covers delivery)
+### Phase 3 — Academy (4–6 weeks, deferred)
 
-**Decision:** do not sell an LMS as a growth project. Graphy already provides login, course delivery, payments and policy pages. Link it first and revisit this phase only if Graphy becomes a real constraint.
+**Decision:** do not sell an LMS as a growth project. Revisit this phase only if the current delivery setup becomes a real constraint.
 
-**Outcome if it is ever needed:** delivery and retention do not depend on manually sharing files.
+**Outcome:** delivery and retention do not depend on manually sharing files.
 
 - Student login on `app.` or `learn.` subdomain.
 - Modules, recorded lessons, worksheets, assignments and progress.
@@ -139,7 +137,7 @@ The website should not just describe the transformation. It should **operate the
 - Admin dashboard for cohorts, content and student questions.
 - Optional monthly membership or alumni programme.
 
-**Only sell it as:** “Move off Graphy when its limits cost you more than a custom build.”
+**Sell it as:** “Deliver a premium course experience without adding admin work.”
 
 ### Phase 4 — Growth (ongoing)
 
@@ -159,14 +157,14 @@ The website should not just describe the transformation. It should **operate the
 1. Custom domain + branded email + launch.
 2. Lead form and WhatsApp handoff.
 3. Real batch dates and next-step clarity.
-4. Paid course page linked to the existing Graphy checkout; Razorpay only if needed.
+4. Paid course page + Razorpay payment link.
 5. Analytics/UTM tracking.
 6. Privacy, terms, refund and contact.
 7. Video facades; written proof summaries.
 
 ### P1 — build after the first paid pilot
 
-1. Custom Razorpay checkout only if Graphy cannot support the funnel.
+1. Full Razorpay checkout + verified webhook + receipts.
 2. Automated WhatsApp/email reminders.
 3. Referral codes and tracking.
 4. CMS/admin for dates, testimonials and FAQs.
@@ -175,7 +173,7 @@ The website should not just describe the transformation. It should **operate the
 
 ### P2 — build when volume justifies it
 
-1. Student portal/LMS, only if Graphy is outgrown.
+1. Student portal/LMS.
 2. Certificates and verification.
 3. Community/membership.
 4. School/B2B funnel.
@@ -196,14 +194,13 @@ The current page is fast because it has no server. Preserve that. Add business f
 | Domains/DNS | Cloudflare Registrar or any registrar; DNS at Cloudflare |
 | Forms | Tally/Formspree for speed; Supabase/Cloudflare function for ownership |
 | Database/auth | Supabase (Postgres, Auth, Storage, RLS) |
-| Course platform | Graphy (already live); link it before building a replacement |
-| Payments | Graphy checkout first; Razorpay Payment Links/Pages only if a custom funnel is needed |
+| Payments | Razorpay Payment Links/Pages first; Razorpay Orders + Checkout + webhook later |
 | Email | Resend or Brevo with domain authentication (SPF/DKIM/DMARC) |
 | WhatsApp | Meta Cloud API via Wati/Interakt/AiSensy for 1:1 reminders; keep the group for community |
 | CMS | Sanity, Notion or Git-based content; do not build a custom CMS for five fields |
 | Video | Mux, Bunny or Cloudflare Stream for course content; YouTube facade for public proof |
 | Analytics | GA4 + Meta Pixel with consent; server-side events later |
-| Student app | Only if Graphy is outgrown: Next.js/Astro + Supabase on `app.` or `learn.` subdomain |
+| Student app | Next.js/Astro + Supabase on `app.` or `learn.` subdomain |
 
 ### Data flow for the first paid version
 
@@ -211,8 +208,8 @@ The current page is fast because it has no server. Preserve that. Add business f
 2. Lead row is created in Supabase/Sheet with source and UTM.
 3. Confirmation page/email/WhatsApp gives the group link and dates.
 4. Reminders run before each session.
-5. Post-workshop offer page links to Graphy checkout, or Razorpay if a custom flow is needed.
-6. Payment provider confirms the sale and marks the student paid.
+5. Post-workshop offer page links to Razorpay.
+6. Razorpay webhook verifies the payment and marks the student paid.
 7. Onboarding email/WhatsApp sends login or next steps.
 8. Admin sees lead → attended → paid → completed.
 
@@ -230,7 +227,7 @@ The current page is fast because it has no server. Preserve that. Add business f
 
 ### The one-line pitch
 
-> “You already have the proof, the free workshop and a paid course platform. I’ll connect them into one system that turns attention into paid students — starting with your own domain, a lead capture flow, and a clear path into Graphy.”
+> “You already have the proof and the free workshop. I’ll build the system that turns that attention into paid students — starting with your own domain, a lead capture flow, and a paid checkout.”
 
 ### 30-minute conversation
 
@@ -249,7 +246,7 @@ The current page is fast because it has no server. Preserve that. Add business f
 - This live demo on a phone and a laptop.
 - A one-page before/after: original page vs rebuilt page.
 - A simple journey diagram (the eight steps above).
-- The existing Graphy catalogue, Instagram, LinkedIn, YouTube and Google Business links, ready to connect.
+- The Instagram, LinkedIn, YouTube and Google Business links Deepika approves, ready to connect.
 - A scope sheet with Phase 1 deliverables, timeline, client responsibilities and price.
 - A payment link for the deposit.
 
@@ -261,7 +258,6 @@ The current page is fast because it has no server. Preserve that. Add business f
 - Which workshop dates, language and time zone are next?
 - Do you have written consent for all 13 testimonials and names?
 - Which domain do you own? If none, which name do you prefer?
-- Which Graphy course or programme should the site point to first?
 - Which Instagram, LinkedIn, YouTube and Google Business links are approved for the site?
 - Who handles WhatsApp replies today, and how many hours per week?
 - What would make this project a clear win in 90 days?
@@ -272,7 +268,7 @@ Use productised phases, not hourly billing. Quote after discovery.
 
 - **Foundation:** domain, launch, lead form, analytics, dates, legal pages, performance fixes.
 - **Enrollment engine:** paid page, checkout, reminders, referrals, admin.
-- **Academy:** deferred; Graphy already provides login and course delivery. Custom build only if Graphy is outgrown.
+- **Academy:** login, course delivery, worksheets, progress, certificates.
 - **Care plan:** hosting, updates, analytics, content and automation support.
 
 Commercial anchors, exact pricing and negotiation notes are intentionally **not stored in this public repo**. Keep them in a private proposal.
@@ -301,5 +297,4 @@ Track these from day one:
 - Do not take payments before privacy, terms and refund pages exist.
 - Keep the client’s WhatsApp group; do not silently replace it with a personal number.
 - Do not publish a phone number, address, testimonial name or client photo without explicit approval.
-- Do not sell an LMS while Graphy already handles course delivery.
 - Before promoting the demo, confirm Deepika’s permission to use her name and photograph, or protect it with a password/`noindex`.
